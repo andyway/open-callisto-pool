@@ -34,7 +34,7 @@ Dependencies:
   * redis-server >= 2.8.0
   * nodejs >= 4 LTS
   * nginx
-  * geth (multi-geth)
+  * geth
 
 **I highly recommend to use Ubuntu 16.04 LTS.**
 
@@ -62,13 +62,13 @@ This will install the latest nodejs
     $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     $ sudo apt-get install -y nodejs
 
-### Install multi-geth
+### Install ethereumsocial
 
-    $ wget https://github.com/ethereumsocial/multi-geth/releases/download/v1.8.10/multi-geth-linux-v1.8.10.zip
-    $ unzip multi-geth-linux-v1.8.10.zip
+    $ wget https://github.com/ethereumsocial/ethereumsocial/releases/download/v1.8.11/ethereum-social-linux-v1.8.11.zip
+    $ unzip ethereum-social-linux-v1.8.11.zip
     $ sudo mv geth /usr/local/bin/geth
 
-### Run multi-geth
+### Run ethereumsocial
 
 If you use Ubuntu, it is easier to control services by using serviced.
 
@@ -89,7 +89,7 @@ User=<your-user-name>
 WantedBy=multi-user.target
 ```
 
-Then run multi-geth by the following commands
+Then run ethereumsocial by the following commands
 
     $ sudo systemctl enable callisto
     $ sudo systemctl start callisto
