@@ -15,14 +15,14 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//clopool.net/',
+      ApiUrl: '//clo.tor.ph/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://clopool.net',
+      HttpHost: 'http://clo.tor.ph',
       HttpPort: 8888,
 
       // Stratum mining endpoint
-      StratumHost: 'clopool.net',
+      StratumHost: 'clo.tor.ph',
       StratumPort: 8008,
 
       // Fee and payout details
@@ -38,7 +38,7 @@ module.exports = function(environment) {
     /* Override ApiUrl just for development, while you are customizing
       frontend markup and css theme on your workstation.
     */
-    ENV.APP.ApiUrl = 'http://localhost:8080/'
+    ENV.APP.ApiUrl = 'http://clo.tor.ph/'
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
